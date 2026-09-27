@@ -39,7 +39,7 @@ class GuardWebViewScreen extends StatefulWidget {
 
 class _GuardWebViewScreenState extends State<GuardWebViewScreen> {
   late final WebViewController _controller;
-  String _serverUrl = 'http://192.168.0.14:3000/guard/checkin';
+  String _serverUrl = 'https://smart-guard-system.vercel.app/guard/login';
   bool _isLoading = true;
   bool _hasError = false;
   String _errorMessage = '';
@@ -122,7 +122,7 @@ class _GuardWebViewScreenState extends State<GuardWebViewScreen> {
               decoration: InputDecoration(
                 filled: true,
                 fillColor: const Color(0xFF0F172A),
-                hintText: 'http://192.168.0.14:3000/guard/checkin',
+                hintText: 'https://smart-guard-system.vercel.app/guard/login',
                 hintStyle: const TextStyle(fontSize: 12, color: Color(0xFF64748B)),
                 border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
               ),
@@ -132,12 +132,12 @@ class _GuardWebViewScreenState extends State<GuardWebViewScreen> {
               spacing: 6,
               children: [
                 ActionChip(
-                  label: const Text('Wi-Fi Tempatan', style: TextStyle(fontSize: 10)),
-                  onPressed: () => textController.text = 'http://192.168.0.14:3000/guard/checkin',
+                  label: const Text('Vercel Live (Lalai)', style: TextStyle(fontSize: 10)),
+                  onPressed: () => textController.text = 'https://smart-guard-system.vercel.app/guard/login',
                 ),
                 ActionChip(
-                  label: const Text('Emulator (10.0.2.2)', style: TextStyle(fontSize: 10)),
-                  onPressed: () => textController.text = 'http://10.0.2.2:3000/guard/checkin',
+                  label: const Text('Wi-Fi Tempatan', style: TextStyle(fontSize: 10)),
+                  onPressed: () => textController.text = 'http://192.168.0.14:3000/guard/login',
                 ),
               ],
             ),
