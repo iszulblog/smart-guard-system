@@ -14,6 +14,7 @@ import {
   Smartphone,
   Download,
   Compass,
+  BookOpen,
 } from 'lucide-react';
 
 export default function AdminNavbar() {
@@ -25,6 +26,7 @@ export default function AdminNavbar() {
     { label: 'Guards', href: '/admin/guards', icon: Users },
     { label: 'Audit Flags', href: '/admin/flagged', icon: AlertTriangle },
     { label: 'Reports', href: '/admin/reports', icon: FileSpreadsheet },
+    { label: 'System Guide', href: '/admin/guide', icon: BookOpen },
     { label: 'Settings', href: '/admin/settings', icon: Settings },
   ];
 

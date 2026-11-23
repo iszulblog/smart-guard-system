@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import {
   MapPin,
   Clock,
@@ -15,6 +16,7 @@ import {
   ArrowRight,
   ShieldCheck,
   Smartphone,
+  BookOpen,
 } from 'lucide-react';
 import OfflineBanner from '@/components/OfflineBanner';
 import CameraCapture from '@/components/CameraCapture';
@@ -245,6 +247,13 @@ export default function GuardCheckin() {
         </div>
 
         <div className="flex items-center gap-1">
+          <Link
+            href="/admin/guide"
+            className="p-2 text-slate-500 hover:text-sky-600 hover:bg-slate-50 rounded-xl transition"
+            title="System Guide & Feature Manual"
+          >
+            <BookOpen className="w-4 h-4" />
+          </Link>
           <button
             onClick={() => router.push('/guard/history')}
             className="p-2 text-slate-500 hover:text-sky-600 hover:bg-slate-50 rounded-xl transition"
