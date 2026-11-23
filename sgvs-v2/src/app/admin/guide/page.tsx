@@ -413,17 +413,27 @@ export default function SystemGuidePage() {
 
           <div className="flex items-center gap-2 flex-wrap">
             <a
-              href="/SGVS_V2_Manual_Lengkap.pdf"
-              download="SGVS_V2_Manual_Lengkap.pdf"
-              className="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs flex items-center gap-2 shadow-sm transition active:scale-95"
+              href="/SGVS_Pembentangan_Fungsi_Sistem.pptx"
+              download="SGVS_Pembentangan_Fungsi_Sistem.pptx"
+              className="px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs flex items-center gap-1.5 shadow-sm transition active:scale-95"
+              title="Muat Turun Microsoft PowerPoint (.pptx)"
+            >
+              <FileSpreadsheet className="w-4 h-4 text-white" />
+              <span>Slaid PPTX</span>
+            </a>
+            <a
+              href="/SGVS_Pembentangan_Fungsi_Sistem_Slides.pdf"
+              target="_blank"
+              className="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs flex items-center gap-1.5 shadow-sm transition active:scale-95"
+              title="Buka / Muat Turun Slaid PDF"
             >
               <Download className="w-4 h-4 text-slate-300" />
-              <span>Muat Turun PDF Modul</span>
+              <span>Slaid PDF</span>
             </a>
             <Link
               href="/guard/login"
               target="_blank"
-              className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs flex items-center gap-2 shadow-sm transition active:scale-95"
+              className="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs flex items-center gap-1.5 shadow-sm transition active:scale-95"
             >
               <Smartphone className="w-4 h-4" />
               <span>Buka Guard App</span>
